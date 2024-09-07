@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Button, Spinner } from "react-bootstrap";
 import Particle from "../Particle";
-import abdCVpdf from "../../Assets/../Assets/Abdulla's Updated CV.pdf";
+import internship from "../../Assets/../Assets/Service Letter-M F Abdulla.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function ResumeNew() {
+function Internship() {
   const [width, setWidth] = useState(1200);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -40,13 +40,13 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={abdCVpdf}
+            href={internship}
             target="_blank"
             style={{ maxWidth: "250px" }}
-            aria-label="Download CV"
+            aria-label="Intern Letter"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download Intern Letter 
           </Button>
         </Row>
 
@@ -56,12 +56,13 @@ function ResumeNew() {
           {isLoading && (
             <div className="text-center">
               <Spinner animation="border" variant="primary" />
-              <p>Loading CV...</p>
+              <p>Loading Intern Letter...</p>
             </div>
           )}
+          
           {/* Display PDF Document */}
           <Document
-            file={abdCVpdf}
+            file={internship}
             onLoadSuccess={onDocumentLoadSuccess}
             className="d-flex justify-content-center"
             onLoadError={(error) => console.log("Error while loading the document!", error)}
@@ -85,13 +86,13 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
           <Button
             variant="primary"
-            href={abdCVpdf}
+            href={internship}
             target="_blank"
             style={{ maxWidth: "250px" }}
-            aria-label="Download CV"
+            aria-label="Intern Letter"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Intern Letter
           </Button>
         </Row>
       </Container>
@@ -99,4 +100,4 @@ function ResumeNew() {
   );
 }
 
-export default ResumeNew;
+export default Internship;
