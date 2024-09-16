@@ -98,12 +98,21 @@ function NavBar() {
                 to="/internship"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Internship
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Internship Letter
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Certifications 
               </Nav.Link>
             </Nav.Item>
 
            
-        
 
             <Nav.Item className="fork-btn">
               <Button

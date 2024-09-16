@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+
+//Import images for Project
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import lankaTradingImage from "../../Assets/Projects/Lanka-Trading-Enterprises.png";
@@ -15,7 +17,7 @@ function Projects() {
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
-        </h1>
+        </h1> 
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
@@ -26,7 +28,8 @@ function Projects() {
               isBlog={false}
               title="Visual Salah Monitor"
               description="A real-time Salah posture monitoring tool using TensorFlow.js PoseNet and React. Provides instant feedback on prayer postures with educational support, including posture guides and relevant Dua explanations. The system is designed for Muslims to improve their Salah, with special focus on new converts."
-            />
+              demoLink="https://drive.google.com/file/d/1G0qIulufCeWpj77Ywwn1mOQK0CtA9ROO/view?usp=drive_link"  // Demo Link
+            /> 
           </Col>
 
           <Col md={4} className="project-card">
@@ -35,6 +38,7 @@ function Projects() {
               isBlog={false}
               title="Tomato Adventure Quest"
               description="An engaging web-based game built using React for the front-end, Node.js for the back-end, and MongoDB for data storage. The game features user authentication with secure login and registration, a dynamic game interface with a timer, restart options, and hearts representing lives. The game communicates with a university-provided Tomato game API to deliver real-time gameplay and updates, including a live scoreboard. Players can view their accumulated score and profile details."
+              demoLink="https://github.com/FayyazAbdulla/Tomato-adventure-quest-2404319.git"  // Demo Link
             />
           </Col>
 
@@ -44,6 +48,8 @@ function Projects() {
               isBlog={false}
               title="Lanka Trading Enterprise E-Commerce"
               description="An E-Commerce platform built for a hardware business using React.js and Firebase. The platform offers a seamless shopping experience, featuring a user-friendly interface, secure backend operations, and a 24-hour customer service chatbot. It also integrates product management, allowing the admin to add, update, and manage inventory effortlessly."
+              demoLink="https://github.com/FayyazAbdulla/SPPM_LTE.git"  // Demo Link
+              VdemoLink="https://sppm-lte.vercel.app/"  // VDemo Link
             />
           </Col>
 
