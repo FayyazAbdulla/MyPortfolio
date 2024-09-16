@@ -6,6 +6,7 @@ import Particle from "../Particle";
 //Import images for Project
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
+import Debra from "../../Assets/Projects/DebraEventManagement .jpeg"
 import lankaTradingImage from "../../Assets/Projects/Lanka-Trading-Enterprises.png";
 import VSM from "../../Assets/Projects/4 about Visual-Salah-Moniter.png";
 import TAQ from "../../Assets/Projects/TAQ.png";
@@ -41,6 +42,15 @@ function Projects() {
               demoLink="https://github.com/FayyazAbdulla/Tomato-adventure-quest-2404319.git"  // Demo Link
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Debra} // Replace with appropriate image
+              isBlog={false}
+              title="Debra Event Management"
+              description="Debra Event Management is an event booking system designed for a renowned event management company in Singapore. The platform enables partners to register, create events, manage ticket sales, and track event performance. It also allows Debra to oversee all events, view sales reports, and calculate earnings with variable commission rates. Built using a SOC-based architecture, the system integrates with external companies, social media, and mobile apps to streamline ticket sales across multiple channels."
+              demoLink="https://github.com/FayyazAbdulla/DebraEventManagement/tree/master"  // Demo Link
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -52,6 +62,8 @@ function Projects() {
               VdemoLink="https://sppm-lte.vercel.app/"  // VDemo Link
             />
           </Col>
+
+          
 
          
         </Row>
