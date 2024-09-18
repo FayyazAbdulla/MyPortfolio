@@ -42,6 +42,7 @@ function Projects() {
               demoLink="https://github.com/FayyazAbdulla/Tomato-adventure-quest-2404319.git"  // Demo Link
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Debra} // Replace with appropriate image
@@ -62,9 +63,6 @@ function Projects() {
               VdemoLink="https://sppm-lte.vercel.app/"  // VDemo Link
             />
           </Col>
-
-          
-
          
         </Row>
       </Container>

@@ -44,6 +44,18 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+        
+        {!props.isBlog && props.demoVideo && (
+          <Button
+            variant="primary"
+            href={props.demoVideo}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <CgWebsite />  &nbsp; 
+            {"Demo"}
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );
