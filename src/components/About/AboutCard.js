@@ -10,9 +10,11 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">M.F. Abdulla</span> from{" "}
             <span className="purple">Negombo, Sri Lanka.</span>
-            <br />
-            I am currently pursuing a B.Sc. (Hons) in Computer Science and
-            Software Engineering at SLIIT Academy.
+            <br />I have successfully completed my Higher National Diploma (HND)
+            at
+            <span className="purple"> SLIIT City Campus</span> and my B.Sc.
+            (Hons) in Computer Science and Software Engineering from the
+            <span className="purple"> University of Bedfordshire, UK.</span>
             <br />
             I have a strong passion for web development, backend systems, and
             applying innovative solutions in technology.
@@ -33,10 +35,9 @@ function AboutCard() {
               learning for real-world impact
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "rgb(155 126 172)", fontStyle: "italic" }}>
             "Constantly innovate and create solutions that make a lasting
-            impact!"{" "}
+            impact!"
           </p>
           <footer className="blockquote-footer">Abdulla</footer>
         </blockquote>

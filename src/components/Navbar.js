@@ -15,6 +15,9 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { GiDiploma } from "react-icons/gi";
+import { HiOutlineMail } from "react-icons/hi";
+import { MdAssignment } from "react-icons/md"; 
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -88,7 +91,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <MdAssignment style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -98,7 +101,7 @@ function NavBar() {
                 to="/internship"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Internship Letter
+                <HiOutlineMail style={{ marginBottom: "2px" }} /> Internship Letter
               </Nav.Link>
             </Nav.Item>
 
@@ -108,7 +111,7 @@ function NavBar() {
                 to="/Certificates"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Certifications 
+                <GiDiploma style={{ marginBottom: "2px" }} /> Certifications 
               </Nav.Link>
             </Nav.Item>
 
