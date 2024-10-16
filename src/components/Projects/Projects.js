@@ -10,6 +10,10 @@ import Debra from "../../Assets/Projects/DebraEventManagement .jpeg"
 import lankaTradingImage from "../../Assets/Projects/Lanka-Trading-Enterprises.png";
 import VSM from "../../Assets/Projects/4 about Visual-Salah-Moniter.png";
 import TAQ from "../../Assets/Projects/TAQ.png";
+import omacgroups from "../../Assets/Omac-Groups.png";
+import CinePlex from "../../Assets/home - Cineplex-Movie-Theatre-in-Kandy.png";
+import JSON_File_Manager from "../../Assets/Admin DashBoard Page - ION-Assignment.png.png";
+
 
 function Projects() {
   return (
@@ -55,6 +59,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={JSON_File_Manager} // Replace with appropriate image
+              isBlog={false}
+              title="JSON File Manager Web App"
+              description="Developed a web application enabling users to upload, view, download, and delete JSON files. Built with a React frontend and Node.js backend, the system integrates MongoDB via Mongoose for file management and uses Multer for file uploads. The dashboard is responsive and user-friendly, enhancing efficiency in file operations."
+              demoLink="https://github.com/FayyazAbdulla/ION-Assignment.git"  // Demo Link
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={lankaTradingImage} // Replace with appropriate image
               isBlog={false}
               title="Lanka Trading Enterprise E-Commerce"
@@ -63,7 +77,27 @@ function Projects() {
               VdemoLink="https://sppm-lte.vercel.app/"  // VDemo Link
             />
           </Col>
-         
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={omacgroups} // Replace with appropriate image
+              isBlog={false}
+              title="OMAC GROUPS Customer Relationship Managment Web App"
+              description="Developed a modern Customer Relationship Management (CRM) system for OMAC Groups (Travel Agency) using React+Vite and Firebase. The system streamlines customer interactions, manages bookings, and enhances client experience by providing a secure, scalable, and responsive platform, tailored for efficient travel service management."
+              demoLink="https://omacgroups.vercel.app/"  // Demo Link
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={CinePlex} // Replace with appropriate image
+              isBlog={false}
+              title="Cineplex"
+              description="The Cineplex Management System is a comprehensive web-based application designed for managing a cineplex's operations. It includes features for user management, movie management, bookings, and reporting. Built using PHP, MySQL, and modern web technologies, the system provides both admin and customer-facing functionalities with role-based access control."
+              demoLink="https://omacgroups.vercel.app/"  // Demo Link
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
