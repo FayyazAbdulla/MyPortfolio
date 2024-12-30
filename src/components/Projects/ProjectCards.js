@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button"; 
+import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
@@ -19,9 +19,7 @@ function ProjectCards(props) {
         </Button>  */}
         {"\n"}
         {"\n"}
-
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -29,10 +27,11 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <BsGithub />  &nbsp; 
+            <BsGithub /> &nbsp;
             {"Source Code"}
           </Button>
         )}
+        
         {!props.isBlog && props.VdemoLink && (
           <Button
             variant="primary"
@@ -40,11 +39,11 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite />  &nbsp; 
+            <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
         )}
-        
+
         {!props.isBlog && props.demoVideo && (
           <Button
             variant="primary"
@@ -52,10 +51,24 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite />  &nbsp; 
+            <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
         )}
+
+        {/*  viewpdf  */}
+        {!props.isBlog && props.viewpdf && (
+          <Button
+            variant="primary"
+            href={props.viewpdf}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <CgWebsite /> &nbsp;
+            {"viewpdf"}
+          </Button>
+        )}
+       
       </Card.Body>
     </Card>
   );

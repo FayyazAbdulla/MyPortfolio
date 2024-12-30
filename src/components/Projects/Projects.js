@@ -4,8 +4,6 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 //Import images for Project
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import Debra from "../../Assets/Projects/DebraEventManagement .jpeg";
 import lankaTradingImage from "../../Assets/Projects/LTE.png";
 import VSM from "../../Assets/Projects/4 about Visual-Salah-Moniter.png";
@@ -14,6 +12,8 @@ import omacgroups from "../../Assets/Projects/OMAC-CRM.png";
 import omacpublic from "../../Assets/Projects/OGPublic1.png";
 import CinePlex from "../../Assets/Projects/CineplexC.png";
 import JSON_File_Manager from "../../Assets/Admin DashBoard Page - ION-Assignment.png.png";
+import fortgrandjewels from "../../Assets/Projects/fortgrandjewels1.png";
+import zenithrentcar from "../../Assets/Projects/Zenith-Car-Rental-System.png";
 
 function Projects() {
   return (
@@ -85,7 +85,7 @@ function Projects() {
               title="OMAC Groups CRM System"
               description="A comprehensive Customer Relationship Management (CRM) web application designed for OMAC Groups, a travel agency. Built with React+Vite and Firebase, this app efficiently organizes customer inquiries, stores client details, and manages bookings. It provides a secure, scalable, and responsive interface that enhances customer service and streamlines operations in the travel sector."
               demoLink="https://github.com/FayyazAbdulla/omacgroups" // Demo Link
-              VdemoLink="https://omacgroups.vercel.app/" 
+              VdemoLink="https://omacgroups.vercel.app/"
             />
           </Col>
 
@@ -96,7 +96,7 @@ function Projects() {
               title="OMAC Groups Ticketing Agency Website"
               description="A modern, user-friendly static website for OMAC Groups, a ticketing agency, built with React, Bootstrap, and Firebase. This site enables users to explore travel options, book tickets, and access support services. Integrated with Firebase and EmailJS, it securely handles inquiries, contact forms, and newsletter sign-ups, providing instant notifications and a seamless user experience."
               demoLink="https://github.com/FayyazAbdulla/flyomac.lk" // Demo Link
-              VdemoLink="https://flyomaclk-abduls-projects-b242d1a8.vercel.app/" 
+              VdemoLink="https://flyomaclk-abduls-projects-b242d1a8.vercel.app/"
             />
           </Col>
 
@@ -109,6 +109,30 @@ function Projects() {
               demoLink="https://github.com/FayyazAbdulla/Cineplex" // Demo Link
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fortgrandjewels}
+              isBlog={false}
+              title="FortGrandJewels"
+              description="**BillingApp for FortGrandJewels**  
+BillingApp is a sleek and efficient invoicing solution tailored for FortGrandJewels, designed to produce professional, premium-quality invoices that align with the brand's luxurious identity. Utilizing Next.js for a responsive interface, Firebase for real-time data management, and PDF.js for seamless PDF generation, the app simplifies billing workflows while ensuring elegance and precision in every invoice."
+              demoLink="" // Demo Link
+              viewpdf="https://drive.google.com/file/d/1eTJ5iaIeC6pZpfM7Mfh4iOpRux-8ohoV/view?usp=sharing"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={zenithrentcar}
+              isBlog={false}
+              title="Zenith Rent Car Management System"
+              description="The **Zenith Rent Car Management System** streamlines car rental operations with features like automated PDF invoice generation, mileage tracking, revenue insights, and fuel monitoring. Built using React+Vite, Tailwind CSS, Firebase, and PDF.js, it offers a modern, secure, and efficient solution for rental businesses to optimize performance and enhance decision-making."
+              demoLink="" // Demo Link
+              viewpdf="https://drive.google.com/file/d/1oQhG_UZ0gIu-C56jxrmsgIPMAaNT5vus/view?usp=sharing"
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
