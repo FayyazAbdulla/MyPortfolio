@@ -19,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CV_view from "./components/Resume/CV_view";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/internship" element={<Internship />} />
           <Route path="/Certificates" element={<Certificates />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/Cv_view" element={<CV_view/>} />
         </Routes>
         <Footer />
       </div>

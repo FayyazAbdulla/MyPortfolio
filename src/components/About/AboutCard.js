@@ -10,34 +10,27 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">M.F. Abdulla</span> from{" "}
             <span className="purple">Negombo, Sri Lanka.</span>
-            <br />I have successfully completed my Higher National Diploma (HND)
-            at
-            <span className="purple"> SLIIT City Campus</span> and my B.Sc.
-            (Hons) in Computer Science and Software Engineering from the
-            <span className="purple"> University of Bedfordshire, UK.</span>
             <br />
-            I have a strong passion for web development, backend systems, and
-            applying innovative solutions in technology.
+            I am a passionate and results-driven <span className="purple">Software Engineer</span> and <span className="purple">Full-Stack Developer</span>, specializing in building dynamic, high-performance applications using modern technologies like <span className="purple">React.js, Next.js, Node.js, Express.js, MongoDB, and Firebase</span>.
+            <br />
+            I hold a <span className="purple">Bachelor of Science (B.Sc.)</span> in <span className="purple">Software Engineering & Computer Science</span> from the <span className="purple">University of Bedfordshire</span>, and I am constantly exploring new ways to innovate and solve real-world problems through technology.
             <br />
             <br />
             Besides coding, here are a few activities I enjoy in my free time:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Building AI-powered web applications
+              <ImPointRight /> Building <span className="purple">AI-powered web applications</span> and exploring <span className="purple">computer vision</span> for real-world use cases.
             </li>
             <li className="about-activity">
-              <ImPointRight /> Developing full-stack solutions with React,
-              Node.js, and MongoDB
+              <ImPointRight /> Developing <span className="purple">full-stack solutions</span> with <span className="purple">React, Node.js, and MongoDB</span> to create scalable and efficient systems.
             </li>
             <li className="about-activity">
-              <ImPointRight /> Innovating with computer vision and machine
-              learning for real-world impact
+              <ImPointRight /> Innovating with <span className="purple">machine learning</span> and <span className="purple">cloud technologies</span> to enhance user experiences and system performance.
             </li>
           </ul>
           <p style={{ color: "rgb(155 126 172)", fontStyle: "italic" }}>
-            "Constantly innovate and create solutions that make a lasting
-            impact!"
+            "Strive to build technology that not only solves problems but also creates a meaningful impact!"
           </p>
           <footer className="blockquote-footer">Abdulla</footer>
         </blockquote>
